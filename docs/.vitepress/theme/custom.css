@@ -1,0 +1,95 @@
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #14b8a6;
+  --vp-c-brand-soft: rgba(20, 184, 166, 0.14);
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #0f766e 0%, #2563eb 100%);
+}
+
+.VPHome .image-bg {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(20, 184, 166, 0.36), transparent 28%),
+    radial-gradient(circle at 80% 30%, rgba(37, 99, 235, 0.28), transparent 30%);
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.vp-doc th,
+.vp-doc td {
+  vertical-align: top;
+}
+
+.vp-doc .mermaid {
+  margin: 24px 0;
+  overflow-x: auto;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--vp-c-bg-soft);
+}
+
+.status-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin: 24px 0;
+}
+
+.status-card {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--vp-c-bg-soft);
+}
+
+.status-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--vp-c-brand-1);
+}
+
+@media print {
+  .VPNav,
+  .VPLocalNav,
+  .VPSidebar,
+  .VPDocAside,
+  .VPDocFooter,
+  .edit-info,
+  .pager {
+    display: none !important;
+  }
+
+  .VPContent,
+  .VPDoc,
+  .VPDoc.has-aside .content-container {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  .vp-doc {
+    max-width: none !important;
+    font-size: 11pt;
+    line-height: 1.35;
+  }
+
+  .vp-doc h1,
+  .vp-doc h2,
+  .vp-doc h3 {
+    break-after: avoid;
+  }
+
+  .vp-doc table,
+  .vp-doc pre,
+  .vp-doc .mermaid {
+    break-inside: avoid;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
