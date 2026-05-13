@@ -1,18 +1,18 @@
-# Entrega 2 - Evolucion funcional
+# Entrega 2 - Evolución funcional
 
 ## Objetivo
 
-Consolidar los modulos principales de catalogo, busqueda, filtros y autenticacion simulada, manteniendo registros de avance y QA parcial.
+Consolidar los módulos principales de catálogo, búsqueda, filtros y autenticación simulada, manteniendo registros de avance y QA parcial.
 
 ## Alcance planificado
 
-| Modulo | Tareas | Criterio de aceptacion |
+| Módulo | Tareas | Criterio de aceptación |
 | --- | --- | --- |
-| Catalogo | Mock data, tarjetas, grilla y detalle. | Minimo 20 productos navegables. |
-| Busqueda | Busqueda por nombre. | El resultado cambia segun texto ingresado. |
-| Filtros | Categoria, marca, precio, stock y caracteristicas. | Los filtros se pueden combinar sin romper la UI. |
-| Auth | Registro, login y persistencia local. | El usuario puede iniciar sesion simulada. |
-| Checkout protegido | Bloqueo o redireccion sin sesion. | No se accede al checkout si no hay usuario. |
+| Catálogo | Mock data, tarjetas, grilla y detalle. | Mínimo 20 productos navegables. |
+| Búsqueda | Búsqueda por nombre. | El resultado cambia según texto ingresado. |
+| Filtros | Categoría, marca, precio, stock y características. | Los filtros se pueden combinar sin romper la UI. |
+| Auth | Registro, login y persistencia local. | El usuario puede iniciar sesión simulada. |
+| Checkout protegido | Bloqueo o redirección sin sesión. | No se accede al checkout si no hay usuario. |
 | QA parcial | Defectos, responsive base y pruebas iniciales. | Checklist parcial registrado. |
 
 ## Tareas principales
@@ -36,7 +36,7 @@ Consolidar los modulos principales de catalogo, busqueda, filtros y autenticacio
 ```mermaid
 sequenceDiagram
   actor Usuario
-  participant Catalogo
+  participant Catalogo as Catálogo
   participant Filtros
   participant Detalle
   participant Auth
@@ -44,7 +44,7 @@ sequenceDiagram
   Usuario->>Filtros: Aplica busqueda y filtros
   Filtros-->>Catalogo: Lista filtrada
   Usuario->>Detalle: Abre producto
-  Usuario->>Auth: Inicia sesion simulada
+  Usuario->>Auth: Inicia sesión simulada
   Auth-->>Usuario: Sesion persistida
 ```
 
@@ -62,6 +62,6 @@ sequenceDiagram
 - Capturas de catalogo y detalle.
 - Capturas de filtros activos.
 - Capturas de login y registro.
-- Commits por modulo.
+- Commits por módulo.
 - Actas de seguimiento.
 - Checklist QA parcial.

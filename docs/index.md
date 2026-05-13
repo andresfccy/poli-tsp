@@ -3,8 +3,8 @@ layout: home
 
 hero:
   name: Tienda TSP
-  text: Portal de documentacion tecnica y academica
-  tagline: Planeacion TSPi/SDD, arquitectura, roadmap, entregas, QA y evidencias del proyecto de tienda virtual.
+  text: Portal de documentación técnica y académica
+  tagline: Planeación TSPi/SDD, arquitectura, roadmap, entregas, QA y evidencias del proyecto de tienda virtual.
   actions:
     - theme: brand
       text: Ver proyecto
@@ -17,12 +17,12 @@ hero:
       link: https://github.com/andresfccy/poli-tsp
 
 features:
-  - title: Planeacion defendible
+  - title: Planeación defendible
     details: Alcance, roles, backlog, cronograma y entregas estructuradas bajo enfoque TSPi.
   - title: Arquitectura trazable
-    details: Rutas, modulos, dependencias y evolucion tecnica alineadas al repositorio real.
-  - title: Control academico
-    details: Reuniones, riesgos, QA, evidencias y conclusiones organizadas para sustentacion.
+    details: Rutas, módulos, dependencias y evolución técnica alineadas al repositorio real.
+  - title: Control académico
+    details: Reuniones, riesgos, QA, evidencias y conclusiones organizadas para sustentación.
 ---
 
 ## Estado actual
@@ -33,11 +33,11 @@ features:
     React, TypeScript, Vite, Tailwind CSS, React Router, Zustand planificado y Vitest.
   </div>
   <div class="status-card">
-    <strong>Implementacion</strong>
+    <strong>Implementación</strong>
     Fase 1 funcional: rutas base, layout, tooling, tipado de dominio y README.
   </div>
   <div class="status-card">
-    <strong>Gestion</strong>
+    <strong>Gestión</strong>
     No existen issues ni PRs remotos; el backlog sugerido queda listo para GitHub Projects.
   </div>
 </div>
@@ -46,17 +46,17 @@ features:
 
 ```mermaid
 flowchart LR
-  H[Home] --> P[Proyecto]
-  H --> A[Arquitectura]
-  H --> R[Roadmap]
-  R --> E1[Entrega 1]
-  R --> E2[Entrega 2]
-  R --> E3[Entrega 3]
-  H --> B[Backlog]
-  H --> Q[QA]
-  H --> C[Conclusiones]
+  H["Home"] --> P["Proyecto"]
+  H --> A["Arquitectura"]
+  H --> R["Roadmap"]
+  R --> E1["Entrega 1"]
+  R --> E2["Entrega 2"]
+  R --> E3["Entrega 3"]
+  H --> B["Backlog"]
+  H --> Q["QA"]
+  H --> C["Conclusiones"]
 ```
 
 ## Fuentes principales
 
-La base documental se encuentra en `docs/planning` y fue reorganizada en secciones navegables para consulta tecnica, academica y de sustentacion.
+La base documental se encuentra en `docs/planning` y fue reorganizada en secciones navegables para consulta técnica, académica y de sustentación.

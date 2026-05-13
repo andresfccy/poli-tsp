@@ -2,23 +2,23 @@
 
 ## Conclusiones tecnicas
 
-El repositorio parte de una base tecnica ordenada: React, TypeScript, Vite, Tailwind, React Router y tooling de calidad ya estan configurados. La arquitectura actual es simple y adecuada para un proyecto universitario porque permite evolucionar por modulos sin introducir backend ni complejidad innecesaria.
+El repositorio parte de una base técnica ordenada: React, TypeScript, Vite, Tailwind, React Router y tooling de calidad ya están configurados. La arquitectura actual es simple y adecuada para un proyecto universitario porque permite evolucionar por módulos sin introducir backend ni complejidad innecesaria.
 
-La planeacion propone una evolucion progresiva: primero arquitectura y rutas, luego catalogo, despues busqueda/filtros, autenticacion, carrito y estabilizacion. Esta secuencia respeta dependencias reales del codigo.
+La planeación propone una evolución progresiva: primero arquitectura y rutas, luego catálogo, después búsqueda/filtros, autenticación, carrito y estabilización. Esta secuencia respeta dependencias reales del código.
 
 ## Conclusiones de proceso
 
-El enfoque TSPi permite convertir un repositorio funcional inicial en un proyecto gestionado formalmente. Los roles, reuniones, backlog, riesgos y criterios de calidad crean trazabilidad academica y facilitan la sustentacion.
+El enfoque TSPi permite convertir un repositorio funcional inicial en un proyecto gestionado formalmente. Los roles, reuniones, backlog, riesgos y criterios de calidad crean trazabilidad académica y facilitan la sustentación.
 
 ## Lecciones esperadas
 
 | Area | Aprendizaje |
 | --- | --- |
-| Planeacion | Las tareas deben derivarse del estado real del repositorio. |
-| Arquitectura | La modularidad debe crecer segun necesidad, no por sobreingenieria. |
+| Planeación | Las tareas deben derivarse del estado real del repositorio. |
+| Arquitectura | La modularidad debe crecer según necesidad, no por sobreingeniería. |
 | Calidad | QA debe iniciar antes de la ultima semana. |
 | Equipo | Los roles ayudan a evitar duplicidad y bloqueos. |
-| Sustentacion | Las evidencias deben registrarse durante el proceso, no al final. |
+| Sustentación | Las evidencias deben registrarse durante el proceso, no al final. |
 
 ## Proximos pasos recomendados
 
@@ -30,4 +30,4 @@ El enfoque TSPi permite convertir un repositorio funcional inicial en un proyect
 
 ## Cierre
 
-Tienda TSP queda documentado como proyecto academico con alcance claro, arquitectura defendible, roadmap de seis semanas, gestion de riesgos, organizacion TSPi y criterios de QA. El portal centraliza la evidencia necesaria para seguimiento, entrega y sustentacion.
+Tienda TSP queda documentado como proyecto académico con alcance claro, arquitectura defendible, roadmap de seis semanas, gestión de riesgos, organización TSPi y criterios de QA. El portal centraliza la evidencia necesaria para seguimiento, entrega y sustentación.

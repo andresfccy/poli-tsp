@@ -1,8 +1,8 @@
-# Entrega 3 - Consolidacion, QA y sustentacion
+# Entrega 3 - Consolidación, QA y sustentación
 
 ## Objetivo
 
-Completar el flujo de compra simulada, estabilizar el producto, cerrar documentacion y preparar la sustentacion final.
+Completar el flujo de compra simulada, estabilizar el producto, cerrar documentación y preparar la sustentación final.
 
 ## Alcance planificado
 
@@ -10,11 +10,11 @@ Completar el flujo de compra simulada, estabilizar el producto, cerrar documenta
 | --- | --- |
 | Carrito | Agregar, eliminar, modificar cantidades y validar stock. |
 | Totales | Subtotales por item y total general. |
-| Checkout | Resumen y confirmacion simulada. |
+| Checkout | Resumen y confirmación simulada. |
 | Testing | Pruebas de filtros, stores y rutas principales. |
-| Responsive | Revision movil y escritorio. |
-| Accesibilidad | Labels, nombres accesibles, contraste y navegacion basica. |
-| Sustentacion | Linea de tiempo, video final, conclusiones y evidencias. |
+| Responsive | Revisión móvil y escritorio. |
+| Accesibilidad | Labels, nombres accesibles, contraste y navegación básica. |
+| Sustentación | Línea de tiempo, video final, conclusiones y evidencias. |
 
 ## Tareas principales
 
@@ -31,19 +31,19 @@ Completar el flujo de compra simulada, estabilizar el producto, cerrar documenta
 | TSP-030 | Pruebas de rutas | 6 |
 | TSP-031 | Revision responsive | 6 |
 | TSP-032 | Revision accesibilidad | 6 |
-| TSP-034 | Documentacion final | 6 |
-| TSP-035 | Preparar sustentacion | 6 |
+| TSP-034 | Documentación final | 6 |
+| TSP-035 | Preparar sustentación | 6 |
 
 ## Flujo final
 
 ```mermaid
 flowchart TD
-  Catalogo[Catalogo] --> Detalle[Detalle de producto]
-  Catalogo --> Add[Agregar al carrito]
+  Catalogo["Catálogo"] --> Detalle["Detalle de producto"]
+  Catalogo --> Add["Agregar al carrito"]
   Detalle --> Add
   Add --> Cart[Carrito]
   Cart --> Stock{Stock valido?}
-  Stock -- No --> Error[Mensaje de validacion]
+  Stock -- No --> Error["Mensaje de validación"]
   Stock -- Si --> Totals[Subtotales y total]
   Totals --> Auth{Sesion activa?}
   Auth -- No --> Login[Login o registro]
@@ -57,8 +57,8 @@ flowchart TD
 - [ ] `pnpm build` ejecutado.
 - [ ] `pnpm test` ejecutado.
 - [ ] Flujo principal probado manualmente.
-- [ ] Responsive revisado en movil y escritorio.
-- [ ] Accesibilidad basica revisada.
+- [ ] Responsive revisado en móvil y escritorio.
+- [ ] Accesibilidad básica revisada.
 - [ ] README actualizado.
 - [ ] Portal VitePress actualizado.
 - [ ] Video final preparado.

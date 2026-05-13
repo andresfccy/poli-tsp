@@ -2,11 +2,11 @@
 
 ## Cadencia
 
-| Reunion | Frecuencia | Duracion | Participantes |
+| Reunión | Frecuencia | Duración | Participantes |
 | --- | --- | --- | --- |
 | Launch meeting | Semana 1 | 60 min | Todo el equipo |
 | Seguimiento semanal | Semanal | 30 min | Todo el equipo |
-| Revision tecnica | Semanal | 30 min | Team Leader, Development Manager, Quality Manager |
+| Revisión técnica | Semanal | 30 min | Team Leader, Development Manager, Quality Manager |
 | QA review | Semanas 2 a 6 | 30 min | Quality Manager, Development Manager |
 | Integracion | Semanas 3 a 6 | 30 min | Development Manager y responsables |
 | Retrospectiva | Semanas 3, 5 y 6 | 30 min | Todo el equipo |
@@ -19,7 +19,7 @@ flowchart TD
   Start[Inicio de semana] --> Seguimiento[Seguimiento semanal]
   Seguimiento --> Bloqueos{Hay bloqueos?}
   Bloqueos -- Si --> Accion[Asignar accion correctiva]
-  Bloqueos -- No --> Ejecucion[Continuar ejecucion]
+  Bloqueos -- No --> Ejecucion["Continuar ejecución"]
   Accion --> QA[QA review]
   Ejecucion --> QA
   QA --> Acta[Actualizar acta]
@@ -29,11 +29,11 @@ flowchart TD
 ## Template de acta
 
 ```md
-# Acta de reunion
+# Acta de reunión
 
 Fecha:
 Semana:
-Tipo de reunion:
+Tipo de reunión:
 Participantes:
 
 ## Objetivo
@@ -51,7 +51,7 @@ Participantes:
 
 ## Evidencias
 
-## Proxima reunion
+## Próxima reunión
 ```
 
 ## Fuente

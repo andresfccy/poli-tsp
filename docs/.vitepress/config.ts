@@ -4,19 +4,19 @@ const repositoryUrl = 'https://github.com/andresfccy/poli-tsp';
 
 export default defineConfig({
   title: 'Tienda TSP',
-  description: 'Portal tecnico y academico del proyecto Tienda TSP bajo enfoque TSPi/SDD.',
+  description: 'Portal técnico y académico del proyecto Tienda TSP bajo enfoque TSPi/SDD.',
   base: '/poli-tsp/',
   cleanUrls: true,
   lastUpdated: true,
   ignoreDeadLinks: true,
   head: [
     ['meta', { name: 'theme-color', content: '#0f766e' }],
-    ['meta', { property: 'og:title', content: 'Tienda TSP - Documentacion tecnica' }],
+    ['meta', { property: 'og:title', content: 'Tienda TSP - Documentación técnica' }],
     [
       'meta',
       {
         property: 'og:description',
-        content: 'Planeacion, arquitectura, roadmap, QA y entregas academicas del proyecto.',
+        content: 'Planeación, arquitectura, roadmap, QA y entregas académicas del proyecto.',
       },
     ],
     ['script', { src: 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js' }],
@@ -62,7 +62,7 @@ export default defineConfig({
         text: 'Proyecto',
         collapsed: false,
         items: [
-          { text: 'Definicion general', link: '/proyecto/' },
+          { text: 'Definición general', link: '/proyecto/' },
           { text: 'Arquitectura', link: '/arquitectura/' },
           { text: 'Roadmap', link: '/roadmap/' },
           { text: 'Equipo y roles', link: '/equipo/' },
@@ -78,7 +78,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Gestion',
+        text: 'Gestión',
         collapsed: false,
         items: [
           { text: 'Backlog', link: '/backlog/' },
@@ -89,7 +89,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Planeacion fuente',
+        text: 'Planeación fuente',
         collapsed: true,
         items: [
           { text: 'Plan maestro', link: '/planning/project-plan' },
@@ -114,7 +114,7 @@ export default defineConfig({
       label: 'Contenido',
     },
     footer: {
-      message: 'Proyecto academico TSPi/SDD construido con React, TypeScript y VitePress.',
+      message: 'Proyecto académico TSPi/SDD construido con React, TypeScript y VitePress.',
       copyright: 'Tienda TSP',
     },
     docFooter: {
@@ -122,7 +122,7 @@ export default defineConfig({
       next: 'Siguiente',
     },
     lastUpdated: {
-      text: 'Ultima actualizacion',
+      text: 'Última actualización',
       formatOptions: {
         dateStyle: 'medium',
         timeStyle: 'short',
