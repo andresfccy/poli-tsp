@@ -51,16 +51,24 @@ Construir una tienda virtual frontend mantenible y sustentable academicamente, a
 | Elemento | Estado |
 | --- | --- |
 | Rama principal | `master` |
-| Remoto | `git@github-personal:andresfccy/poli-tsp.git` |
+| Remoto | `git@github.com:andresfccy/poli-tsp.git` |
 | Commits revisados | `7b5757f`, `07ec87a` |
 | Issues GitHub | 0 |
 | Pull requests GitHub | 0 |
 | Fase implementada | Fase 2: catálogo y detalle |
 | Corte de seguimiento | 2026-06-07 |
+| Portal GitHub Pages | Publicado desde `docs/` con VitePress |
+
+## Publicación del portal
+
+La documentación se despliega en GitHub Pages mediante el workflow `.github/workflows/deploy-docs.yml`. Cada push a `master` que modifique `docs/**`, `package.json`, `pnpm-lock.yaml` o el workflow ejecuta `pnpm docs:build` y publica `docs/.vitepress/dist`.
+
+Los diagramas Mermaid se renderizan preservando saltos de línea dentro de bloques `pre.mermaid`, evitando errores de sintaxis en diagramas como el mapa del portal.
 
 ## Enlaces
 
 - [Repositorio GitHub](https://github.com/andresfccy/poli-tsp)
+- [Portal GitHub Pages](https://andresfccy.github.io/poli-tsp/)
 - [Plan maestro](../planning/project-plan.md)
 - [Backlog fuente](../planning/backlog.md)
 - [Seguimiento semanal](../seguimiento/)

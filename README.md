@@ -59,7 +59,19 @@ pnpm dev
 pnpm lint
 pnpm build
 pnpm test
+pnpm docs:build
 ```
+
+## Documentación y GitHub Pages
+
+El portal técnico y académico vive en `docs/` y se construye con VitePress.
+
+- Portal publicado: https://andresfccy.github.io/poli-tsp/
+- Comando local: `pnpm docs:dev`
+- Validación de producción: `pnpm docs:build`
+- Despliegue: GitHub Actions ejecuta `.github/workflows/deploy-docs.yml` en cada push a `master` que modifique `docs/**`, `package.json`, `pnpm-lock.yaml` o el workflow.
+
+Los diagramas Mermaid del portal se renderizan desde fences `mermaid` preservando saltos de línea para evitar errores de sintaxis en GitHub Pages.
 
 ## Rutas base
 

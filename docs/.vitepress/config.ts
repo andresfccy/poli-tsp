@@ -23,7 +23,7 @@ export default defineConfig({
     [
       'script',
       {},
-      "window.addEventListener('load', function () { if (window.mermaid) { window.mermaid.initialize({ startOnLoad: true, theme: 'neutral' }); } });",
+      "window.addEventListener('load', function () { if (window.mermaid) { window.mermaid.initialize({ startOnLoad: false, theme: 'neutral' }); window.mermaid.run(); } });",
     ],
   ],
   markdown: {
@@ -35,7 +35,7 @@ export default defineConfig({
         const language = token.info.trim();
 
         if (language === 'mermaid') {
-          return `<div class="mermaid">${token.content}</div>`;
+          return `<pre class="mermaid">${md.utils.escapeHtml(token.content)}</pre>`;
         }
 
         return defaultFence(tokens, idx, options, env, self);
