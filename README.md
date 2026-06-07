@@ -42,6 +42,15 @@ Fase 1 completada:
 - Tipos de dominio iniciales creados.
 - Repositorio Git inicializado y conectado al remote SSH.
 
+Fase 2 completada al 2026-06-07:
+
+- Dataset mock con 20 productos.
+- Componente `ProductCard` creado.
+- Catálogo renderizado como grilla responsive.
+- Detalle de producto resuelto por `productId`.
+- Utilidad de formato de moneda creada.
+- Pruebas iniciales para dataset y catálogo.
+
 ## Scripts
 
 ```bash

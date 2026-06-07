@@ -11,12 +11,12 @@ gantt
   Planeación y setup técnico        :done,    s1, 2026-05-13, 7d
   Arquitectura y rutas base         :done,    s1b, 2026-05-13, 7d
   section Entrega 2
-  Catálogo y detalle                :active,  s2, 2026-05-20, 7d
-  Búsqueda y filtros                :         s3, 2026-05-27, 7d
-  Autenticación simulada            :         s4, 2026-06-03, 7d
+  Catálogo y detalle                :done,    s2, 2026-05-20, 7d
+  Búsqueda y filtros                :active,  s3, 2026-06-08, 7d
+  Autenticación simulada            :         s4, 2026-06-15, 7d
   section Entrega 3
-  Carrito y checkout                :         s5, 2026-06-10, 7d
-  QA, estabilización y sustentación :         s6, 2026-06-17, 7d
+  Carrito y checkout                :         s5, 2026-06-22, 7d
+  QA, estabilización y sustentación :         s6, 2026-06-29, 7d
 ```
 
 ## Roadmap visual
@@ -24,11 +24,17 @@ gantt
 | Semana | Foco | Resultado |
 | --- | --- | --- |
 | 1 | Planeación, setup y arquitectura | Base técnica funcional y plan TSPi/SDD. |
-| 2 | Catálogo y detalle | Mock data, tarjetas y detalle navegable. |
-| 3 | Búsqueda y filtros | Catálogo consultable con filtros y ordenamiento. |
+| 2 | Catálogo y detalle | Completado: 20 productos mock, tarjetas y detalle navegable. |
+| 3 | Búsqueda y filtros | Siguiente ciclo: catálogo consultable con filtros y ordenamiento. |
 | 4 | Autenticación simulada | Registro, login, persistencia y checkout protegido. |
 | 5 | Carrito y checkout | Store global, stock, totales y checkout simulado. |
 | 6 | QA y sustentación | Pruebas, responsive, accesibilidad, documentación y video. |
+
+## Corte de avance
+
+| Fecha | Estado |
+| --- | --- |
+| 2026-06-07 | Fase 2 cerrada. Se replantea el cronograma desde Fase 3 para mantener ciclos semanales completos. |
 
 ## Dependencias principales
 

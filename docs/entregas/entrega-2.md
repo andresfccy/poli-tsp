@@ -8,7 +8,7 @@ Consolidar los módulos principales de catálogo, búsqueda, filtros y autentica
 
 | Módulo | Tareas | Criterio de aceptación |
 | --- | --- | --- |
-| Catálogo | Mock data, tarjetas, grilla y detalle. | Mínimo 20 productos navegables. |
+| Catálogo | Mock data, tarjetas, grilla y detalle. | Completado: 20 productos navegables. |
 | Búsqueda | Búsqueda por nombre. | El resultado cambia según texto ingresado. |
 | Filtros | Categoría, marca, precio, stock y características. | Los filtros se pueden combinar sin romper la UI. |
 | Auth | Registro, login y persistencia local. | El usuario puede iniciar sesión simulada. |
@@ -17,19 +17,24 @@ Consolidar los módulos principales de catálogo, búsqueda, filtros y autentica
 
 ## Tareas principales
 
-| ID | Tarea | Semana |
-| --- | --- | --- |
-| TSP-008 | Crear mock de productos | 2 |
-| TSP-009 | Crear componente ProductCard | 2 |
-| TSP-010 | Completar CatalogPage | 2 |
-| TSP-011 | Completar ProductDetailPage | 2 |
-| TSP-013 | Implementar busqueda | 3 |
-| TSP-014 | Implementar filtros basicos | 3 |
-| TSP-015 | Implementar filtros avanzados | 3 |
-| TSP-018 | Formularios de login | 4 |
-| TSP-019 | Formularios de registro | 4 |
-| TSP-020 | Store de autenticacion | 4 |
-| TSP-021 | Proteccion de checkout | 4 |
+| ID | Tarea | Semana | Estado |
+| --- | --- | --- | --- |
+| TSP-008 | Crear mock de productos | 2 | Done |
+| TSP-009 | Crear componente ProductCard | 2 | Done |
+| TSP-010 | Completar CatalogPage | 2 | Done |
+| TSP-011 | Completar ProductDetailPage | 2 | Done |
+| TSP-012 | Crear utilidades de moneda | 2 | Done |
+| TSP-013 | Implementar busqueda | 3 | Ready |
+| TSP-014 | Implementar filtros basicos | 3 | Ready |
+| TSP-015 | Implementar filtros avanzados | 3 | Ready |
+| TSP-018 | Formularios de login | 4 | Backlog |
+| TSP-019 | Formularios de registro | 4 | Backlog |
+| TSP-020 | Store de autenticacion | 4 | Backlog |
+| TSP-021 | Proteccion de checkout | 4 | Backlog |
+
+## Corte 2026-06-07
+
+Se completa el bloque de catálogo y detalle. El entregable queda parcialmente avanzado: faltan búsqueda, filtros y autenticación simulada para cerrar Entrega 2 completa.
 
 ## Flujo esperado
 

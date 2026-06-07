@@ -51,6 +51,7 @@ export default defineConfig({
       { text: 'Roadmap', link: '/roadmap/' },
       { text: 'Entregas', link: '/entregas/entrega-1' },
       { text: 'Backlog', link: '/backlog/' },
+      { text: 'Seguimiento', link: '/seguimiento/' },
       { text: 'QA', link: '/qa/' },
     ],
     sidebar: [
@@ -82,6 +83,7 @@ export default defineConfig({
         collapsed: false,
         items: [
           { text: 'Backlog', link: '/backlog/' },
+          { text: 'Seguimiento', link: '/seguimiento/' },
           { text: 'Reuniones', link: '/reuniones/' },
           { text: 'Riesgos', link: '/riesgos/' },
           { text: 'QA', link: '/qa/' },

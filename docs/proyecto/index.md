@@ -55,10 +55,12 @@ Construir una tienda virtual frontend mantenible y sustentable academicamente, a
 | Commits revisados | `7b5757f`, `07ec87a` |
 | Issues GitHub | 0 |
 | Pull requests GitHub | 0 |
-| Fase implementada | Base técnica inicial |
+| Fase implementada | Fase 2: catálogo y detalle |
+| Corte de seguimiento | 2026-06-07 |
 
 ## Enlaces
 
 - [Repositorio GitHub](https://github.com/andresfccy/poli-tsp)
 - [Plan maestro](../planning/project-plan.md)
 - [Backlog fuente](../planning/backlog.md)
+- [Seguimiento semanal](../seguimiento/)

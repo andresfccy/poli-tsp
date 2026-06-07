@@ -2,7 +2,7 @@
 
 ## Estado
 
-El repositorio no tiene issues ni pull requests registrados al momento de la inspeccion. Este backlog queda listo para convertirse en issues de GitHub y organizarse en un tablero Kanban.
+El repositorio no tiene issues ni pull requests registrados al momento de la inspeccion. El seguimiento local marca completadas las tareas de Setup y Core Features hasta el corte 2026-06-07.
 
 ## Epicas
 
@@ -72,6 +72,19 @@ flowchart LR
 | TSP-028 | Pruebas de filtros | Media | 6 | Entrega 3 |
 | TSP-031 | Revision responsive | Alta | 6 | Entrega 3 |
 | TSP-035 | Preparar sustentación | Alta | 6 | Entrega 3 |
+
+## Estado por tarea al 2026-06-07
+
+| ID | Estado | Evidencia |
+| --- | --- | --- |
+| TSP-001 a TSP-007 | Done | Base técnica, rutas, layout, tooling y documentación inicial. |
+| TSP-008 | Done | `src/data/products.ts` con 20 productos mock. |
+| TSP-009 | Done | `src/components/catalog/ProductCard.tsx`. |
+| TSP-010 | Done | `src/pages/CatalogPage.tsx` renderiza resumen y grilla. |
+| TSP-011 | Done | `src/pages/ProductDetailPage.tsx` resuelve `productId`. |
+| TSP-012 | Done | `src/utils/money.ts`. |
+| TSP-013 a TSP-017 | Ready | Próximo ciclo: búsqueda, filtros y ordenamiento. |
+| TSP-018 a TSP-035 | Backlog | Pendientes según dependencias del roadmap. |
 
 ## Fuente completa
 

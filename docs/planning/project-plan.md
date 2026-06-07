@@ -2,7 +2,7 @@
 
 ## 1. Resumen del estado actual
 
-El repositorio `andresfccy/poli-tsp` contiene una tienda virtual frontend construida con React, TypeScript, Vite y Tailwind CSS. La implementación actual corresponde a una base técnica funcional: existe configuración de tooling, rutas principales, layout global, tipado inicial de dominio y páginas placeholder para catálogo, detalle, autenticación, carrito y checkout.
+El repositorio `andresfccy/poli-tsp` contiene una tienda virtual frontend construida con React, TypeScript, Vite y Tailwind CSS. La implementación actual corresponde al cierre de Fase 2: existe configuración de tooling, rutas principales, layout global, tipado inicial de dominio, catálogo con datos mock, tarjetas de producto y detalle navegable por ruta.
 
 La revisión local y del repositorio remoto muestra:
 
@@ -13,9 +13,9 @@ La revisión local y del repositorio remoto muestra:
   - `07ec87a docs: add project roadmap readme`.
 - Issues existentes en GitHub: ninguno.
 - Pull requests existentes en GitHub: ninguno.
-- Estado actual documentado en `README.md`: Fase 1 completada.
+- Estado actual documentado en `README.md`: Fases 1 y 2 completadas al 2026-06-07.
 
-El sistema no tiene todavía implementación completa de catálogo, mocks, búsqueda, filtros, autenticación simulada, store global, carrito, pruebas de componentes ni flujo de QA. Estos elementos se planifican progresivamente para seis semanas bajo un enfoque académico TSPi/SDD.
+El sistema no tiene todavía búsqueda, filtros, autenticación simulada, store global, carrito ni flujo completo de QA. Estos elementos se planifican progresivamente bajo ciclos semanales con seguimiento TSPi/SDD.
 
 ## 2. Definición general del proyecto
 
@@ -112,8 +112,13 @@ src/
       MainLayout.tsx        # Shell visual, navegación y Outlet
   lib/
     cn.ts                   # Utilidad para clases condicionales
+  components/
+    catalog/
+      ProductCard.tsx       # Tarjeta reutilizable de producto
+  data/
+    products.ts             # Dataset mock de 20 productos
   pages/
-    CatalogPage.tsx         # Página raíz del catálogo
+    CatalogPage.tsx         # Página raíz del catálogo con grilla
     ProductDetailPage.tsx   # Detalle por productId
     CartPage.tsx            # Carrito
     CheckoutPage.tsx        # Checkout simulado
@@ -126,14 +131,16 @@ src/
     setup.ts                # Setup de jest-dom para Vitest
   types/
     domain.ts               # Tipos Product, User, Cart y filtros
+  utils/
+    money.ts                # Formato de moneda
 ```
 
 ### Rutas actuales
 
 | Ruta | Página | Estado |
 | --- | --- | --- |
-| `/` | `CatalogPage` | Placeholder funcional |
-| `/products/:productId` | `ProductDetailPage` | Placeholder funcional |
+| `/` | `CatalogPage` | Catálogo mock implementado |
+| `/products/:productId` | `ProductDetailPage` | Detalle implementado |
 | `/cart` | `CartPage` | Placeholder funcional |
 | `/checkout` | `CheckoutPage` | Placeholder funcional |
 | `/login` | `LoginPage` | Placeholder funcional |

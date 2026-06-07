@@ -26,6 +26,52 @@ flowchart TD
   Acta --> Backlog[Actualizar backlog]
 ```
 
+## Actas resumidas al 2026-06-07
+
+### Semana 1 - 2026-05-13
+
+| Campo | Registro |
+| --- | --- |
+| Tipo | Launch meeting y planeación TSPi |
+| Objetivo | Acordar alcance, roles, stack y entregables. |
+| Avances | Proyecto base inicializado, rutas principales y layout definidos. |
+| Decisiones | SPA sin backend real, persistencia futura en `localStorage`, seis fases semanales. |
+| Riesgos | Alcance amplio para una tienda completa; se acuerda trabajar por incrementos. |
+| Evidencias | README, roadmap, backlog y estructura inicial del repositorio. |
+
+### Semana 2 - 2026-05-20
+
+| Campo | Registro |
+| --- | --- |
+| Tipo | Seguimiento semanal y revisión UI |
+| Objetivo | Preparar el módulo de catálogo y detalle. |
+| Avances | Se valida contrato `Product`, grilla esperada, navegación a detalle y necesidad de 20 productos mock. |
+| Decisiones | Crear `ProductCard`, `products.ts` y utilidad de moneda como piezas separadas. |
+| Riesgos | Sin dataset real no se pueden validar filtros ni carrito. |
+| Evidencias | Backlog de Fase 2 priorizado. |
+
+### Semana 3 - 2026-05-27
+
+| Campo | Registro |
+| --- | --- |
+| Tipo | Control de avance y ajuste de dependencias |
+| Objetivo | Revisar si el proyecto podía avanzar a filtros. |
+| Avances | Se confirma que Fase 3 depende de cerrar catálogo navegable. |
+| Decisiones | Mantener búsqueda y filtros en Ready, pero no iniciar hasta tener mock data estable. |
+| Riesgos | Desplazamiento del cronograma de Entrega 2. |
+| Evidencias | Roadmap ajustado y seguimiento semanal actualizado. |
+
+### Semana 4 - 2026-06-07
+
+| Campo | Registro |
+| --- | --- |
+| Tipo | Cierre de Fase 2 |
+| Objetivo | Completar catálogo y detalle antes de iniciar filtros. |
+| Avances | 20 productos mock, `ProductCard`, grilla responsive, detalle por ruta y pruebas iniciales. |
+| Decisiones | Reprogramar Fase 3 para el ciclo 2026-06-08 a 2026-06-14. |
+| Riesgos | Entrega 2 aún requiere filtros y auth para quedar completa. |
+| Evidencias | Código en `src/data`, `src/components/catalog`, `src/pages` y pruebas iniciales. |
+
 ## Template de acta
 
 ```md

@@ -34,11 +34,11 @@ features:
   </div>
   <div class="status-card">
     <strong>Implementación</strong>
-    Fase 1 funcional: rutas base, layout, tooling, tipado de dominio y README.
+    Fases 1 y 2 funcionales: base técnica, rutas, layout, catálogo mock, tarjetas y detalle navegable.
   </div>
   <div class="status-card">
     <strong>Gestión</strong>
-    No existen issues ni PRs remotos; el backlog sugerido queda listo para GitHub Projects.
+    Seguimiento semanal registrado hasta el 2026-06-07; Fase 3 queda como siguiente ciclo.
   </div>
 </div>
 
@@ -53,6 +53,7 @@ flowchart LR
   R --> E2["Entrega 2"]
   R --> E3["Entrega 3"]
   H --> B["Backlog"]
+  H --> S["Seguimiento"]
   H --> Q["QA"]
   H --> C["Conclusiones"]
 ```
