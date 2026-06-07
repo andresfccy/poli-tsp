@@ -55,7 +55,7 @@ Construir una tienda virtual frontend mantenible y sustentable academicamente, a
 | Commits revisados | `7b5757f`, `07ec87a` |
 | Issues GitHub | 0 |
 | Pull requests GitHub | 0 |
-| Fase implementada | Fase 2: catálogo y detalle |
+| Fase implementada | Fase 3: búsqueda, filtros y ordenamiento |
 | Corte de seguimiento | 2026-06-07 |
 | Portal GitHub Pages | Publicado desde `docs/` con VitePress |
 

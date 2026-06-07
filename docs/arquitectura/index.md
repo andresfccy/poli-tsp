@@ -19,6 +19,7 @@ flowchart TD
   Layout --> NotFound["NotFoundPage"]
   App --> Types["src/types/domain.ts"]
   Layout --> Utils["src/lib/cn.ts"]
+  Catalog --> Filters["src/utils/catalogFilters.ts"]
 ```
 
 ## Estructura actual
@@ -41,6 +42,8 @@ src/
   styles/index.css
   test/setup.ts
   types/domain.ts
+  utils/catalogFilters.ts
+  utils/money.ts
 ```
 
 ## Evolución propuesta
@@ -65,8 +68,9 @@ flowchart LR
 | Routing | Rutas base, navegación y página 404. | Alta | Baja |
 | UI | Layout, tarjetas, formularios y responsive. | Alta | Media |
 | Catálogo | Productos mock, listado y detalle. | Alta | Media |
-| Búsqueda | Filtrado por texto. | Alta | Baja |
-| Filtros | Categoría, marca, precio, stock y características. | Alta | Media |
+| Búsqueda | Filtrado por texto sobre nombre, marca, categoría, descripción y características. | Alta | Baja |
+| Filtros | Categoría, marca, precio, stock y características combinables. | Alta | Media |
+| Ordenamiento | Nombre A-Z, menor precio y mayor precio. | Media | Baja |
 | Autenticación | Registro, login y sesión local. | Alta | Media |
 | Estado global | Stores de auth y carrito con Zustand. | Alta | Media |
 | Carrito | Items, cantidades, stock, subtotales y total. | Alta | Alta |
@@ -77,7 +81,7 @@ flowchart LR
 
 | Ruta | Página | Estado |
 | --- | --- | --- |
-| `/` | Catálogo | Placeholder funcional |
+| `/` | Catálogo | Funcional con búsqueda, filtros y ordenamiento |
 | `/products/:productId` | Detalle | Placeholder funcional |
 | `/cart` | Carrito | Placeholder funcional |
 | `/checkout` | Checkout | Placeholder funcional |

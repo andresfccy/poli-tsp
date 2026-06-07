@@ -66,11 +66,11 @@ flowchart TD
 | Campo | Registro |
 | --- | --- |
 | Tipo | Cierre de Fase 2 |
-| Objetivo | Completar catálogo y detalle antes de iniciar filtros. |
-| Avances | 20 productos mock, `ProductCard`, grilla responsive, detalle por ruta y pruebas iniciales. |
-| Decisiones | Reprogramar Fase 3 para el ciclo 2026-06-08 a 2026-06-14. |
-| Riesgos | Entrega 2 aún requiere filtros y auth para quedar completa. |
-| Evidencias | Código en `src/data`, `src/components/catalog`, `src/pages` y pruebas iniciales. |
+| Objetivo | Completar catálogo y detalle, y adelantar filtros si la capacidad del ciclo lo permite. |
+| Avances | 20 productos mock, `ProductCard`, grilla responsive, detalle por ruta, búsqueda, filtros, ordenamiento y pruebas. |
+| Decisiones | Cerrar Fase 3 de forma adelantada y reservar el siguiente ciclo para autenticación simulada. |
+| Riesgos | Entrega 2 aún requiere auth y protección de checkout para quedar completa. |
+| Evidencias | Código en `src/data`, `src/components/catalog`, `src/pages`, `src/utils/catalogFilters.ts` y pruebas iniciales. |
 
 ## Template de acta
 

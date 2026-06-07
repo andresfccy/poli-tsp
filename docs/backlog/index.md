@@ -2,7 +2,7 @@
 
 ## Estado
 
-El repositorio no tiene issues ni pull requests registrados al momento de la inspeccion. El seguimiento local marca completadas las tareas de Setup y Core Features hasta el corte 2026-06-07.
+El repositorio no tiene issues ni pull requests registrados al momento de la inspeccion. El seguimiento local marca completadas las tareas de Setup, Core Features y Search & Filters hasta el corte 2026-06-07.
 
 ## Epicas
 
@@ -65,7 +65,10 @@ flowchart LR
 | TSP-008 | Crear mock de productos | Alta | 2 | Entrega 2 |
 | TSP-010 | Completar CatalogPage | Alta | 2 | Entrega 2 |
 | TSP-013 | Implementar busqueda | Alta | 3 | Entrega 2 |
+| TSP-014 | Implementar filtros basicos | Alta | 3 | Entrega 2 |
 | TSP-015 | Implementar filtros avanzados | Alta | 3 | Entrega 2 |
+| TSP-016 | Implementar ordenamiento | Media | 3 | Entrega 2 |
+| TSP-017 | Validar estado sin resultados | Media | 3 | Entrega 2 |
 | TSP-020 | Store de autenticacion | Alta | 4 | Entrega 2 |
 | TSP-022 | Store de carrito | Alta | 5 | Entrega 3 |
 | TSP-027 | Completar checkout simulado | Media | 5 | Entrega 3 |
@@ -83,7 +86,11 @@ flowchart LR
 | TSP-010 | Done | `src/pages/CatalogPage.tsx` renderiza resumen y grilla. |
 | TSP-011 | Done | `src/pages/ProductDetailPage.tsx` resuelve `productId`. |
 | TSP-012 | Done | `src/utils/money.ts`. |
-| TSP-013 a TSP-017 | Ready | Próximo ciclo: búsqueda, filtros y ordenamiento. |
+| TSP-013 | Done | Búsqueda por nombre, marca, categoría, descripción y características en `CatalogPage`. |
+| TSP-014 | Done | Filtros por categoría, marca, precio y disponibilidad. |
+| TSP-015 | Done | Filtros por características combinables. |
+| TSP-016 | Done | Ordenamiento por nombre, menor precio y mayor precio. |
+| TSP-017 | Done | Estado vacío y contador de resultados. |
 | TSP-018 a TSP-035 | Backlog | Pendientes según dependencias del roadmap. |
 
 ## Fuente completa

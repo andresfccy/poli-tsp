@@ -51,6 +51,15 @@ Fase 2 completada al 2026-06-07:
 - Utilidad de formato de moneda creada.
 - Pruebas iniciales para dataset y catálogo.
 
+Fase 3 completada de forma adelantada al 2026-06-07:
+
+- Búsqueda por nombre, marca, categoría, descripción y características.
+- Filtros combinables por categoría, marca, rango de precio, disponibilidad y características.
+- Ordenamiento por nombre, menor precio y mayor precio.
+- Estado vacío para combinaciones sin resultados.
+- Lógica de filtrado separada y cubierta con pruebas unitarias.
+- Pruebas de interacción para búsqueda, filtros y estado sin resultados.
+
 ## Scripts
 
 ```bash
@@ -106,6 +115,9 @@ src/
     setup.ts
   types/
     domain.ts
+  utils/
+    catalogFilters.ts
+    money.ts
 ```
 
 ## Modelo de dominio esperado
@@ -137,9 +149,9 @@ src/
 
 ### Fase 3: Busqueda y filtros
 
-- Implementar busqueda basica por nombre de producto.
-- Implementar filtros avanzados por caracteristicas, categoria, marca, precio y disponibilidad.
-- Agregar ordenamiento por nombre o precio si aporta claridad al catalogo.
+- Implementar busqueda basica por nombre de producto. Completado.
+- Implementar filtros avanzados por caracteristicas, categoria, marca, precio y disponibilidad. Completado.
+- Agregar ordenamiento por nombre o precio si aporta claridad al catalogo. Completado.
 
 ### Fase 4: Autenticacion simulada
 

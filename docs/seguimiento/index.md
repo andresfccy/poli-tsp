@@ -5,17 +5,17 @@
 | Campo | Valor |
 | --- | --- |
 | Fecha de corte | 2026-06-07 |
-| Ciclo activo | Cierre de Fase 2 y preparación de Fase 3 |
-| Estado técnico | Catálogo y detalle implementados |
-| Estado de calidad | `pnpm docs:build` validado para el portal; `lint` general requiere excluir artefactos generados de VitePress |
+| Ciclo activo | Cierre de Fase 3 adelantada y preparación de Fase 4 |
+| Estado técnico | Catálogo, detalle, búsqueda, filtros y ordenamiento implementados |
+| Estado de calidad | `vitest --run`, `tsc`, `vite build`, `eslint .` y `vitepress build docs` validados con binarios locales |
 | Estado documentación | Portal VitePress corregido para renderizar diagramas Mermaid sin colapsar saltos de línea |
-| Siguiente fase | Búsqueda, filtros y ordenamiento |
+| Siguiente fase | Autenticación simulada y protección de checkout |
 
 ## Resumen ejecutivo
 
-El proyecto completa la base técnica y el módulo de catálogo. Al corte 2026-06-07 ya existe un flujo navegable desde catálogo hacia detalle de producto, con datos mock suficientes para iniciar filtros, carrito y pruebas funcionales.
+El proyecto completa la base técnica, el módulo de catálogo y la Fase 3 de búsqueda y filtros. Al corte 2026-06-07 ya existe un flujo navegable desde catálogo hacia detalle de producto, con datos mock consultables por búsqueda, categoría, marca, precio, disponibilidad, características y ordenamiento.
 
-La planificación se mantiene en ciclos semanales. Como el avance real se concentró en el cierre de Fase 2, el cronograma se reajusta para que Fase 3 inicie el 2026-06-08 con un bloque completo de una semana.
+La planificación se mantiene en ciclos semanales. Como el trabajo rindió por encima de lo esperado, la Fase 3 queda adelantada y el siguiente bloque puede concentrarse en autenticación simulada.
 
 ## Ciclos registrados
 
@@ -24,7 +24,7 @@ La planificación se mantiene en ciclos semanales. Como el avance real se concen
 | Semana 1 | 2026-05-13 a 2026-05-19 | Planeación, setup y arquitectura | Cerrado | Proyecto Vite/React, rutas base, layout, tooling y documentación inicial. |
 | Semana 2 | 2026-05-20 a 2026-05-26 | Catálogo y detalle | Cerrado | Contrato de producto, alcance de mock data y diseño de grilla definidos. |
 | Semana 3 | 2026-05-27 a 2026-06-02 | Control y ajuste | Cerrado | Se confirma dependencia crítica: filtros, carrito y checkout requieren catálogo real antes de continuar. |
-| Semana 4 | 2026-06-03 a 2026-06-07 | Cierre de Fase 2 | Cerrado | 20 productos mock, `ProductCard`, grilla responsive, detalle por ruta y pruebas iniciales. |
+| Semana 4 | 2026-06-03 a 2026-06-07 | Cierre de Fase 2 y Fase 3 adelantada | Cerrado | 20 productos mock, `ProductCard`, grilla responsive, detalle por ruta, búsqueda, filtros, ordenamiento y pruebas. |
 
 ## Burndown cualitativo
 
@@ -32,7 +32,7 @@ La planificación se mantiene en ciclos semanales. Como el avance real se concen
 | --- | --- | --- | --- |
 | Setup | 7 tareas | 7 tareas | 0 |
 | Catálogo | 5 tareas | 5 tareas | 0 |
-| Búsqueda y filtros | 5 tareas | 0 tareas | 5 |
+| Búsqueda y filtros | 5 tareas | 5 tareas | 0 |
 | Auth | 4 tareas | 0 tareas | 4 |
 | Carrito y checkout | 6 tareas | 0 tareas | 6 |
 | QA final | 8 tareas | 0 tareas | 8 |
@@ -43,19 +43,20 @@ La planificación se mantiene en ciclos semanales. Como el avance real se concen
 - Usar imágenes remotas de referencia para dar señal visual al catálogo sin incorporar assets pesados al repositorio.
 - Dejar el botón de carrito deshabilitado en detalle hasta Fase 5 para no mezclar alcance.
 - Agregar pruebas mínimas desde Fase 2 para que el comando `pnpm test` tenga valor desde ahora.
-- Replanificar Fase 3 desde el 2026-06-08.
 - Corregir el render de diagramas Mermaid del portal para que GitHub Pages no muestre errores de sintaxis en secciones como Mapa del portal.
+- Adelantar Fase 3 en el corte 2026-06-07 para llegar a la siguiente revisión con búsqueda, filtros y ordenamiento demostrables.
+- Extraer la lógica de filtros a una utilidad pura para facilitar pruebas y evitar que la página concentre toda la lógica de negocio.
 
 ## Riesgos activos
 
 | Riesgo | Impacto | Mitigación |
 | --- | --- | --- |
-| Entrega 2 incompleta si filtros y auth se retrasan | Alto | Priorizar filtros en el siguiente ciclo y dejar auth con alcance mínimo funcional. |
+| Entrega 2 incompleta si auth se retrasa | Alto | Filtros ya quedan cerrados; priorizar autenticación simulada con alcance mínimo funcional. |
 | Imágenes externas pueden no cargar sin conexión | Medio | Mantener `alt` descriptivo y considerar assets locales si se requiere demo offline. |
-| Crecimiento de lógica en páginas | Medio | Extraer filtros a utilidad pura o hook testeable en Fase 3. |
+| Crecimiento de lógica en páginas | Bajo | Lógica de filtros extraída a `src/utils/catalogFilters.ts`; mantener esa separación en nuevas fases. |
 
 ## Próximo ciclo
 
 | Fecha | Objetivo | Criterio de salida |
 | --- | --- | --- |
-| 2026-06-08 a 2026-06-14 | Implementar búsqueda, filtros y ordenamiento | El catálogo responde a query, categoría, marca, precio, stock, características y ordenamiento. |
+| 2026-06-08 a 2026-06-14 | Implementar autenticación simulada | Registro, login local y protección básica de checkout. |

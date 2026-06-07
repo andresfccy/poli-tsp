@@ -34,11 +34,11 @@ features:
   </div>
   <div class="status-card">
     <strong>Implementación</strong>
-    Fases 1 y 2 funcionales: base técnica, rutas, layout, catálogo mock, tarjetas y detalle navegable.
+    Fases 1, 2 y 3 funcionales: base técnica, catálogo, detalle, búsqueda, filtros y ordenamiento.
   </div>
   <div class="status-card">
     <strong>Gestión</strong>
-    Seguimiento semanal registrado hasta el 2026-06-07; Fase 3 queda como siguiente ciclo.
+    Seguimiento semanal registrado hasta el 2026-06-07; Fase 3 se cerró de forma adelantada.
   </div>
 </div>
 
